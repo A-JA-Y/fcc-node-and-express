@@ -1,11 +1,15 @@
 {
-  "name": "fcc-node-and-express",
-  "version": "1.0.0",
-  "description": "This repo is forked for practicing node js",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "fcc-learn-node-with-express",
+  "version": "0.1.0",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.19.2",
+    "fcc-express-bground": "https://github.com/freeCodeCamp/fcc-express-bground-pkg.git"
   },
-  "author": "Ajay Kumar",
-  "license": "ISC"
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
 }
