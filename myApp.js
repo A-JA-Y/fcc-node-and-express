@@ -1,18 +1,4 @@
-let express = require("express");
-let app = express();
-require('dotenv').config();
-console.log("Hello World");
-console.log(process.env.MESSAGE_STYLE);
-app.use('/public',express.static(__dirname + '/public'));
-app.get("/", (req, res) => {
-  res.sendFile("./views/index.html", { root: __dirname });
-});
-app.get("/json", (req, res) => {
-  process.env.MESSAGE_STYLE === "uppercase" ? res.json({message: "HELLO JSON"}) : res.json({message: "Hello json"});
-});
-
-
-module.exports = app;let bodyParser=require('body-parser')
+let bodyParser=require('body-parser')
 let express = require("express");
 const req = require("express/lib/request");
 var app = express();
@@ -57,4 +43,3 @@ app.post('/name',(req,res)=>{
 
 
 module.exports = app;
-
